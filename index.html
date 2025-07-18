@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Malla Interactiva</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Malla de Ingeniería Comercial</h1>
+  <div class="malla">
 
+    <!-- 1° semestre -->
+    <div class="semestre">
+      <h2>1° Semestre</h2>
+      <div class="ramo" data-id="1" onclick="toggleRamoConPrer(this)">Pensamiento y Actualidad Económica</div>
+      <div class="ramo" data-id="2" onclick="toggleRamoConPrer(this)">Introducción a la Economía</div>
+      <div class="ramo" data-id="3" onclick="toggleRamoConPrer(this)">Álgebra</div>
+      <div class="ramo" data-id="4" onclick="toggleRamoConPrer(this)">Introducción al Management</div>
+      <div class="ramo" data-id="5" onclick="toggleRamoConPrer(this)">Comunicación Escrita</div>
+      <div class="ramo" data-id="6" onclick="toggleRamoConPrer(this)">Comunicación Oral</div>
+    </div>
+
+    <!-- 2° semestre -->
+    <div class="semestre">
+      <h2>2° Semestre</h2>
+      <div class="ramo" data-id="7" onclick="toggleRamoConPrer(this)">Contabilidad I</div>
+      <div class="ramo bloqueado" data-id="8" data-prer="3" onclick="toggleRamoConPrer(this)">Cálculo</div>
+      <div class="ramo" data-id="9" onclick="toggleRamoConPrer(this)">Business Tech</div>
+      <div class="ramo bloqueado" data-id="10" data-prer="2" onclick="toggleRamoConPrer(this)">Macroeconomía</div>
+      <div class="ramo" data-id="11" onclick="toggleRamoConPrer(this)">Lectura Crítica</div>
+      <div class="ramo" data-id="12" onclick="toggleRamoConPrer(this)">Pensamiento Crítico</div>
+    </div>
+
+    <!-- 3° semestre -->
+    <div class="semestre">
+      <h2>3° Semestre</h2>
+      <div class="ramo" data-id="13" onclick="toggleRamoConPrer(this)">Comportamiento Organizacional</div>
+      <div class="ramo bloqueado" data-id="14" data-prer="2" onclick="toggleRamoConPrer(this)">Microeconomía</div>
+      <div class="ramo bloqueado" data-id="15" data-prer="7" onclick="toggleRamoConPrer(this)">Contabilidad II</div>
+      <div class="ramo" data-id="16" onclick="toggleRamoConPrer(this)">Desarrollo Profesional I</div>
+      <div class="ramo bloqueado" data-id="17" data-prer="8" onclick="toggleRamoConPrer(this)">Probabilidad e Inferencia</div>
+    </div>
+
+    <!-- 4° semestre -->
+    <div class="semestre">
+      <h2>4° Semestre</h2>
+      <div class="ramo" data-id="18" onclick="toggleRamoConPrer(this)">Derecho y Empresa</div>
+      <div class="ramo bloqueado" data-id="19" data-prer="13" onclick="toggleRamoConPrer(this)">Marketing I</div>
+      <div class="ramo" data-id="20" onclick="toggleRamoConPrer(this)">Ética de los Negocios</div>
+      <div class="ramo" data-id="21" onclick="toggleRamoConPrer(this)">Emprender con Impacto</div>
+      <div class="ramo bloqueado" data-id="22" data-prer="17" onclick="toggleRamoConPrer(this)">Herramientas para el Análisis de Datos</div>
+      <div class="ramo" data-id="23" onclick="toggleRamoConPrer(this)">Pasantía (verano)</div>
+      <div class="ramo bloqueado" data-id="24" data-prer="17" onclick="toggleRamoConPrer(this)">Métodos Estadísticos</div>
+    </div>
+
+    <!-- 5° semestre -->
+    <div class="semestre">
+      <h2>5° Semestre</h2>
+      <div class="ramo bloqueado" data-id="25" data-prer="13" onclick="toggleRamoConPrer(this)">Organizaciones Ágiles</div>
+      <div class="ramo bloqueado" data-id="26" data-prer="9" onclick="toggleRamoConPrer(this)">Business Innovation Technologies</div>
+      <div class="ramo bloqueado" data-id="27" data-prer="15" onclick="toggleRamoConPrer(this)">Finanzas</div>
+      <div class="ramo bloqueado" data-id="28" data-prer="14" onclick="toggleRamoConPrer(this)">Competencia y Mercados</div>
+      <div class="ramo bloqueado" data-id="29" data-prer="22" onclick="toggleRamoConPrer(this)">Estrategia de Visualización de Datos</div>
+    </div>
+
+    <!-- 6° semestre -->
+    <div class="semestre">
+      <h2>6° Semestre</h2>
+      <div class="ramo bloqueado" data-id="30" data-prer="28" onclick="toggleRamoConPrer(this)">Estrategia</div>
+      <div class="ramo bloqueado" data-id="31" data-prer="19" onclick="toggleRamoConPrer(this)">Marketing II</div>
+      <div class="ramo bloqueado" data-id="32" data-prer="21" onclick="toggleRamoConPrer(this)">Emprendimiento Innovador</div>
+      <div class="ramo bloqueado" data-id="33" data-prer="16" onclick="toggleRamoConPrer(this)">Desarrollo Profesional II</div>
+      <div class="ramo bloqueado" data-id="34" data-prer="27" onclick="toggleRamoConPrer(this)">Finanzas Corporativas</div>
+      <div class="ramo bloqueado" data-id="35" data-prer="29" onclick="toggleRamoConPrer(this)">Proyecto de Análisis de Datos</div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
