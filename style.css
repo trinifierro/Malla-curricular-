@@ -33,11 +33,13 @@ h1 {
   transition: all 0.3s;
 }
 
+/* Aprobado */
 .ramo.aprobado {
   background-color: #d3a4f7; /* lila */
   text-decoration: line-through;
 }
 
+/* Bloqueado */
 .ramo.bloqueado {
   background-color: #ccc;
   color: #666;
