@@ -6,17 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const id = ramo.dataset.id;
     const prereqs = (ramo.dataset.prer || "").split(",").filter(p => p);
 
-    // Aplicar estado guardado
     if (estado[id] === "aprobado") {
       ramo.classList.add("aprobado");
     }
 
-    // Bloquear si algún prerrequisito no está aprobado
     if (prereqs.some(pr => estado[pr] !== "aprobado")) {
       ramo.classList.add("bloqueado");
     }
 
-    // Evento clic
     ramo.addEventListener("click", () => {
       if (ramo.classList.contains("bloqueado")) return;
 
@@ -24,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
       estado[id] = ramo.classList.contains("aprobado") ? "aprobado" : "pendiente";
       localStorage.setItem("estadoRamos", JSON.stringify(estado));
 
-      // Revisar desbloqueo de otros ramos
       ramos.forEach(r => {
         const reqs = (r.dataset.prer || "").split(",").filter(p => p);
         if (reqs.length === 0) return;
